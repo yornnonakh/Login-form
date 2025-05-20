@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Form</title>
+  <style>
+    body {
+        font-family: sans-serif;
+        background: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .header {
+        background: white;
+        padding: 30px 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 320px;
+    }
+    .h2 {
+        margin-bottom: 20px;
+    }
+    .b {
+        padding: 10px 55px 15px 60px;
+        border-radius: 4px;
+    }
+    .ut {
+        background-color: #d633ff;
+    }
+    .login {
+        flex: 1;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        background: #eee;
+        font-weight: bold;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        padding: 12px;
+        margin: 8px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    .forgot {
+        color: #d633ff;
+        font-size: 13px;
+        text-align: left;
+        margin: 5px 0 15px;
+        text-decoration: none;
+    }
+    .btn {
+        padding: 12px;
+        background: linear-gradient(to right, #d633ff, #e75480);
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .footer {
+        font-size: 14px;
+        margin-top: 20px;
+        color: #d633ff;
+        text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <nav class="header">
+    <h2>Login Form</h2>
+
+    <main class="main">
+      <button class="b ut" >Login</button>
+      <button class="b ton">Signup</button>
+    </main>
+
+    <form>
+      <input type="email" placeholder="Email Address">
+      <input type="password" placeholder="Password">
+      <a href="#" class="forgot">Forgot password?</a>
+      <button type="submit" class="btn">Login</button>
+    </form>
+
+    <p class="footer">Not a member? <a href="#">Signup now</a></p>
+  </nav>
+</body>
+</html>
