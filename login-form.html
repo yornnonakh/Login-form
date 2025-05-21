@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+          margin-bottom: 20px;
+        }
+        .tabs {
+          display: flex;
+          margin-bottom: 20px;
+          border-radius: 8px;
+          overflow: hidden;
+        }
+        .tab {
+          flex: 1;
+          padding: 10px;
+          cursor: pointer;
+          border: none;
+          background: #eee;
+          font-weight: bold;
+        }
+        .tab.active {
+          background: linear-gradient(to right, #d633ff, #e75489);
+          color: white;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+        }
+        input {
+          padding: 12px;
+          margin: 8px 0;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          font-size: 14px;
+        }
+        .forgot {
+          color: #d633ff;
+          font-size: 13px;
+          text-align: left;
+        }
+        .login-btn {
+          padding: 12px ;
+          background: linear-gradient(to right, #d633ff,#e75489);
+          border: none;
+          color: white;
+          font-weight: bold;
+          border-radius: 6px;
+          cursor: pointer;
+          margin-top: 10px;
+        }
+        .signup-text {
+          font-size: 14px;
+          margin-top: 20px;
+
+        }
+        .signup-text a {
+          color: #d633ff;
+          text-decoration: none;
+        }
+
+    </style>
+  </head>
+  <body> 
+    <!-- Login form  -->
+    <nav class="container">
+      <h2>Login Form</h2>
+
+      <div class="tabs">
+        <button class="tab active">Login</button>
+        <button class="tab">Signup</button>
+      </div>
+
+      <form>
+        <input type="email" placeholder="Email Address" />
+        <input type="password" placeholder="Password" />
+        <a href="#" class="forgot">Forgot password?</a>
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+
+      <p class="signup-text">Not a member? <a href="#">Signup now</a></p>
+    </nav>
+  </body>
+</html>
